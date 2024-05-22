@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 
 export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -37,7 +37,7 @@ export default function Contacts({ contacts, changeChat }) {
                 >
                   <div className="avatar">
                     <img
-                      src={`data:image/svg+xml;base64,${contact.avatarImage}`}
+                      src={Logo}
                       alt=""
                     />
                   </div>
@@ -79,7 +79,6 @@ const Container = styled.div`
     }
     h3 {
       color: white;
-      text-transform: uppercase;
     }
   }
   .contacts {
